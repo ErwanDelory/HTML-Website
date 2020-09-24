@@ -53,28 +53,41 @@
         <p>Web development skills</p>
     </div>
 
-
     <div class="container">
-        <div class="row">
+        <div class="row row-cols-2">
             <div class="col">
                 <p>HTML</p>
-                <pre><code class="language-html">p { color: red }</code></pre>
+                <pre><code class="language-html">&lt;div id="skills-text"&gt;
+    &lt;h3&gt;My skills&lt;/h3&gt;
+    &lt;p&gt;Web development skills&lt;/p&gt;
+&lt;/div&gt;</code></pre>
             </div>
             <div class="col">
                 <p>CSS</p>
                 <pre><code class="language-css">footer {
-                  position: absolute;
-                  text-align: center;
-                  bottom: 0;
-                  width: 100%;
-                  }
-                </code></pre>
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}</code></pre>
             </div>
-            <div class="w-100"></div>
-            <div class="col">col</div>
-            <div class="col">col</div>
+            <div class="col">
+                <p>JavaScript</p>
+                <pre><code class="language-js">function normalizeScrollBar () {
+    var element = document.querySelector('.messages');
+    element.scrollTop = element.scrollHeight;
+}</code></pre>
+            </div>
+            <div class="col">
+                <p>SQL</p>
+                <pre><code class="language-sql">SELECT * FROM ${config.mysqlCourses}
+WHERE coursID IN 
+(SELECT coursID FROM inscription 
+WHERE userID = ?)`;</code></pre>
+            </div>
         </div>
     </div>
+
 
 
 
