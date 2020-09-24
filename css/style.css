@@ -10,7 +10,6 @@ body:not(nav) {
 footer {
     position: absolute;
     text-align: center;
-    bottom: 0;
     width: 100%;
 }
 
@@ -46,4 +45,8 @@ footer {
     font-variant: small-caps;
     font-size: 2.5vw;
     text-align: center;
+}
+
+#carousel-text {
+    color: black;
 }
