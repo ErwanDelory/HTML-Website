@@ -7,18 +7,16 @@
     <link href="css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="js/prism.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Page Perso</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Erwan DELORY</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,8 +25,8 @@
             <div class="navbar-nav">
                 <a class="nav-link active" href="index.html"><i class="fa fa-home"></i> Home <span
             class="sr-only">(current)</span></a>
-                <a class="nav-link" href="pages/cv.html"><i class="fa fa-code"></i> Skills</a>
-                <a class="nav-link" href="pages/projects.html"><i class="fa fa-tasks"></i> Projets</a>
+                <a class="nav-link" href="#skills-text"><i class="fa fa-code"></i> Skills</a>
+                <a class="nav-link" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
             </div>
         </div>
         <form class="form-inline">
@@ -53,31 +51,30 @@
         </br>
         <h2><i class="fa fa-code"></i> Skills</h2>
         <h3><i class="fa fa-terminal"></i> Web development skills</h3>
+        </br>
     </div>
 
     <div class="container">
         <div class="row row-cols-2">
 
             <div class="col">
-                <p>HTML</p>
+                <p><i class="fab fa-html5"></i> HTML</p>
                 <pre><code class="language-html">&lt;div id="skills-text"&gt;
-    &lt;h3&gt;My skills&lt;/h3&gt;
+    &lt;h3&gt;Skills&lt;/h3&gt;
     &lt;p&gt;Web development skills&lt;/p&gt;
 &lt;/div&gt;</code></pre>
             </div>
 
             <div class="col">
-                <p>CSS</p>
-                <pre><code class="language-css">footer {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+                <p><i class="fab fa-css3"></i> CSS</p>
+                <pre><code class="language-css">* {
+    margin: 0;
+    padding: 0;
 }</code></pre>
             </div>
 
             <div class="col">
-                <p>JavaScript</p>
+                <p><i class="fab fa-js-square"></i> JavaScript</p>
                 <pre><code class="language-js">function normalizeScrollBar () {
     var element = document.querySelector('.messages');
     element.scrollTop = element.scrollHeight;
@@ -85,7 +82,7 @@
             </div>
 
             <div class="col">
-                <p>SQL</p>
+                <p><i class="fas fa-database"></i> SQL</p>
                 <pre><code class="language-sql">SELECT * FROM ${config.mysqlCourses}
 WHERE coursID IN 
 (SELECT coursID FROM inscription 
@@ -93,7 +90,7 @@ WHERE userID = ?)`;</code></pre>
             </div>
 
             <div class="col">
-                <p>React</p>
+                <p><i class="fab fa-react"></i> React</p>
                 <pre><code class="language-tsx">const addPokemon = () => {
     PokemonService.addPokemon(pokemon).then(
     () => history.push(`/pokemons`))
@@ -101,19 +98,21 @@ WHERE userID = ?)`;</code></pre>
             </div>
 
             <div class="col">
-                <p>JSON</p>
-                <pre><code class="language-json">{
-    "name": "Salamèche",
-    "hp": 28,
-    "types": [
-        "Feu"
-    ]
-}</code></pre>
+                <p><i class="fab fa-php"></i> PHP</p>
+                <pre><code class="language-php">&lt;?php
+    require_once 'config.php';
+    $PDO = new PDO($dsn, $login, $password, $opt);                
+?&gt;</code></pre>
             </div>
         </div>
     </div>
 
-
+    <div id="projects">
+        <div id="projects-text">
+            </br>
+            <h2><i class="fa fa-tasks"></i> My projects</h2>
+        </div>
+    </div>
 
 
     <!--<footer>
