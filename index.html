@@ -48,13 +48,16 @@
 
     </div>
 
+
     <div id="skills-text">
-        <h3>My skills</h3>
-        <p>Web development skills</p>
+        </br>
+        <h2><i class="fa fa-code"></i> Skills</h2>
+        <h3><i class="fa fa-terminal"></i> Web development skills</h3>
     </div>
 
     <div class="container">
         <div class="row row-cols-2">
+
             <div class="col">
                 <p>HTML</p>
                 <pre><code class="language-html">&lt;div id="skills-text"&gt;
@@ -62,6 +65,7 @@
     &lt;p&gt;Web development skills&lt;/p&gt;
 &lt;/div&gt;</code></pre>
             </div>
+
             <div class="col">
                 <p>CSS</p>
                 <pre><code class="language-css">footer {
@@ -71,6 +75,7 @@
     width: 100%;
 }</code></pre>
             </div>
+
             <div class="col">
                 <p>JavaScript</p>
                 <pre><code class="language-js">function normalizeScrollBar () {
@@ -78,12 +83,32 @@
     element.scrollTop = element.scrollHeight;
 }</code></pre>
             </div>
+
             <div class="col">
                 <p>SQL</p>
                 <pre><code class="language-sql">SELECT * FROM ${config.mysqlCourses}
 WHERE coursID IN 
 (SELECT coursID FROM inscription 
 WHERE userID = ?)`;</code></pre>
+            </div>
+
+            <div class="col">
+                <p>React</p>
+                <pre><code class="language-tsx">const addPokemon = () => {
+    PokemonService.addPokemon(pokemon).then(
+    () => history.push(`/pokemons`))
+}</code></pre>
+            </div>
+
+            <div class="col">
+                <p>JSON</p>
+                <pre><code class="language-json">{
+    "name": "Salamèche",
+    "hp": 28,
+    "types": [
+        "Feu"
+    ]
+}</code></pre>
             </div>
         </div>
     </div>
