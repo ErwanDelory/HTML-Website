@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body:not(nav) {
+    background-color: #faf3dd;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+#index-body {
+    position: relative;
+    text-align: center;
+    color: #faf3dd;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-variant: small-caps;
+    font-size: 3vw;
+}
+
+#subtittle {
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#skills-text {
+    font-variant: small-caps;
+    font-size: 2.5vw;
+    text-align: center;
+}
