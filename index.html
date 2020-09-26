@@ -10,12 +10,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <script src="js/prism.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Page Perso</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Erwan DELORY</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,20 +24,15 @@
     </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="index.html"><i class="fa fa-home"></i> Home <span
-            class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#index-body"><i class="fa fa-home"></i> Home</a>
                 <a class="nav-link" href="#skills-text"><i class="fa fa-code"></i> Skills</a>
                 <a class="nav-link" href="#projects"><i class="fa fa-tasks"></i> Projects</a>
             </div>
         </div>
-        <form class="form-inline">
-            <a class="nav-link" href="pages/cv.html"><i class="fa fa-linkedin"></i></a>
-        </form>
     </nav>
 
-
     <div id="index-body">
-        <img src="img/background-index.jpg" class="img-fluid" alt="Responsive image">
+        <img id="background" src="img/background-index.jpg" class="img-fluid" alt="Responsive image">
         <h1 class="center-text">
             <span id="title">Erwan DELORY</span>
             </br>
@@ -111,6 +107,7 @@ WHERE userID = ?)`;</code></pre>
         <div id="projects-text">
             </br>
             <h2><i class="fa fa-tasks"></i> My projects</h2>
+            </br>
         </div>
     </div>
 
@@ -147,13 +144,17 @@ WHERE userID = ?)`;</code></pre>
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            </br>
+            <p>I realized my projects during my free time but also during my studies at Polytech Marseille.</p>
+            <p>Thanks to these projects, I could discover HTML, CSS, JavaScript, PHP, Angular, React, NodeJS, SQL but also the VueJS framework during my last internship.</p>
         </div>
         </br>
     </div>
 
-
     <footer>
-        <p>Copyright 2020 - DELORY Erwan</p>
+        <a href="https://www.linkedin.com/in/erwan-delory/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/ErwanDelory" target="_blank"><i class="fab fa-github"></i></a>
+        <p>Copyright © 2020 - DELORY Erwan</p>
     </footer>
 
 </body>
