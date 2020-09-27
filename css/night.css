@@ -11,7 +11,7 @@ body {
 }
 
 body:not(nav) {
-    background-color: #faf3dd;
+    background-color: #5e6472;
 }
 
 footer {
@@ -28,6 +28,13 @@ footer {
     position: relative;
     text-align: center;
     color: #faf3dd;
+}
+
+.switch-mode {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .center-text {
@@ -92,6 +99,14 @@ footer {
 }
 
 .fa-sort-down {
+    color: #faf3dd;
+}
+
+.fa-sun {
+    color: #faf3dd;
+}
+
+.fa-moon {
     color: #faf3dd;
 }
 

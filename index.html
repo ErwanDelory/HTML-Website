@@ -3,7 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/day.css" title="day" />
+    <link rel="stylesheet" type="text/css" href="css/night.css" title="night" />
     <link href="css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -36,6 +37,10 @@
 
     <section id="index">
         <div class="bg">
+            <div class="switch-mode">
+                <a href="#" onclick="setActiveStyleSheet('day'); return false;"><i class="far fa-sun fa-3x"></i></a>
+                <a href="#" onclick="setActiveStyleSheet('night'); return false;"><i class="far fa-moon fa-3x"></i></a>
+            </div>
             <h1 class="center-text">
                 <span id="title">Erwan DELORY</span>
                 </br>
@@ -157,8 +162,6 @@ WHERE userID = ?)`;</code></pre>
             </br>
         </div>
     </section>
-
-
 
     <footer>
         <a href="https://www.linkedin.com/in/erwan-delory/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
