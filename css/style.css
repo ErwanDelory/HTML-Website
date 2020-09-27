@@ -7,6 +7,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body:not(nav) {
@@ -23,7 +24,7 @@ footer {
     color: #faf3dd;
 }
 
-#index-body {
+#index {
     position: relative;
     text-align: center;
     color: #faf3dd;
@@ -41,6 +42,26 @@ footer {
 #subtittle {
     font-style: italic;
     text-shadow: 5px 5px 5px black;
+}
+
+@media (min-width: 900px) {
+    #index {
+        background-image: url("../img/background-index.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 899px) {
+    #index {
+        background-image: url("../img/background-index.jpg");
+        height: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 #skills-text {
@@ -68,4 +89,51 @@ footer {
 
 .fa-github {
     color: #faf3dd;
+}
+
+.fa-sort-down {
+    color: #faf3dd;
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+#icon {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
