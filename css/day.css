@@ -14,15 +14,8 @@ body:not(nav) {
     background-color: #faf3dd;
 }
 
-footer {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    background-color: #292b2c;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #faf3dd;
-}
+
+/*Section Index*/
 
 #index {
     position: relative;
@@ -32,7 +25,6 @@ footer {
 
 .switch-mode {
     position: absolute;
-    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -42,72 +34,13 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 4vw;
     text-shadow: 5px 5px 5px black;
 }
 
 #subtittle {
     font-style: italic;
     text-shadow: 5px 5px 5px black;
-}
-
-@media (min-width: 900px) {
-    #index {
-        background-image: url("../img/background-index.jpg");
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media (max-width: 899px) {
-    #index {
-        background-image: url("../img/background-index.jpg");
-        height: 40%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-#skills-text {
-    font-size: 2.5vw;
-    text-align: center;
-}
-
-#projects-text {
-    font-size: 2.5vw;
-    text-align: center;
-}
-
-#carousel-text {
-    color: black;
-}
-
-#carousel-background {
-    background-color: rgba(94, 100, 114, 0.7);
-    border-radius: 8px;
-}
-
-.fa-linkedin-in {
-    color: #faf3dd;
-}
-
-.fa-github {
-    color: #faf3dd;
-}
-
-.fa-sort-down {
-    color: #faf3dd;
-}
-
-.fa-sun {
-    color: #faf3dd;
-}
-
-.fa-moon {
-    color: #faf3dd;
 }
 
 @-webkit-keyframes bounce {
@@ -151,4 +84,102 @@ footer {
     animation-fill-mode: both;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+}
+
+.fa-sort-down {
+    color: #faf3dd;
+}
+
+.fa-sun {
+    color: #faf3dd;
+}
+
+.fa-moon {
+    color: #faf3dd;
+}
+
+
+/*First page image*/
+
+@media (min-width: 50em) {
+    #index {
+        background-image: url("../img/background-index.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .switch-mode {
+        top: 10%;
+    }
+}
+
+@media (max-width: 50em) {
+    #index {
+        background-image: url("../img/background-index.jpg");
+        height: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .switch-mode {
+        top: 25%;
+    }
+    .switch-mode a {
+        font-size: 5px;
+    }
+}
+
+
+/*Section Who*/
+
+#who-text {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+
+/*Section Skills*/
+
+#skills-text {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+
+/*Section Projects*/
+
+#projects-text {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+#carousel-text {
+    color: black;
+}
+
+#carousel-background {
+    background-color: rgba(94, 100, 114, 0.7);
+    border-radius: 8px;
+}
+
+
+/*Section Footer*/
+
+footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color: #292b2c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #faf3dd;
+}
+
+.fa-linkedin-in {
+    color: #faf3dd;
+}
+
+.fa-github {
+    color: #faf3dd;
 }
